@@ -1,0 +1,340 @@
+
+
+
+
+
+
+
+body {
+    padding-top: 60px;
+    padding-bottom: 40px;
+	background-color: #ccc;
+	background-color: #A2B9E0;
+    color: #333;
+    font-family: Verdana,sans-serif;
+    font-family: Arial,sans-serif;
+    font-size: 14px;
+    text-rendering: optimizelegibility;
+}
+
+.bt-bg-blue {
+    background-color: #A2B9E0;
+}
+
+.btn-default {
+  background-color: #EECC5F;
+ }
+
+.btn-default:hover,
+.btn-default:active,
+.btn-default.active,
+.btn-default.disabled,
+.btn-default[disabled] {
+  background-color: #D16500;
+}
+
+.btn-success:active, .btn-success.active {
+  background-color: #57a900;
+}
+.navbar {
+
+ 
+}
+.navbar-toggle {
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 0px;
+    float: right;
+    margin-bottom: 8px;
+    margin-left: 15px;
+    margin-top: 8px;
+    padding: 9px 10px;
+    position: relative;
+}
+
+.navbar-default {
+    background-color: #A2B9E0;
+    border-color: #A2B9E0;
+}
+
+
+.navbar-default {
+    background-image: none;
+    background-repeat: repeat-x;
+    border-radius: 0px;
+-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+
+.bt-logo3 {
+    background: rgba(0, 0, 0, 0) url(../img/bt-logo2.png) no-repeat 15px 8px;
+	padding-left:55px;
+	padding-top:5px;
+}
+
+.bt-logo3 h4{
+  	color:#FFF;
+	margin:0px;
+	padding:0px;
+	font-size:22px;
+}
+.bt-logo3 h5{
+  
+  	color:#FFF;
+	margin:0px;
+	padding:0px;
+}
+
+
+
+
+
+
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color: #5B687C;
+    color: #FFF;
+}
+
+
+
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a{
+    background-image: none;
+	background-color: #eee;
+}
+
+
+
+
+.navbar-default .navbar-nav > .active > a:hover {
+ background-color: #5B687C;
+    color: #FFF;
+}
+.navbar-default .navbar-nav  li > a {
+    color: #004472;
+}
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777;
+}
+
+
+
+
+
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+    background: #F6A828 url("images/ui-bg_glass_65_ffffff_1x400.png") repeat-x scroll 50% 50%;
+    border: 1px solid #F6A828;
+    color: #eb8f00;
+    font-weight: bold;
+}
+
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus {
+    background: #A2B9E0 url("images/ui-bg_glass_100_fdf5ce_1x400.png") repeat-x scroll 50% 50%;
+    border: 1px solid #A2B9E0;
+    color: #555;
+    font-weight: bold;
+}
+
+.ui-widget-content {
+    background: none;
+    background-color: #0381BC;
+    border: 1px solid #ddd;
+    color: #fff;
+}
+.ui-widget-header {
+
+    border: 1px solid #e78f08;
+    color: #777;
+    font-weight: normal;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+    background: #FFF url("images/ui-bg_highlight-soft_75_ffe45c_1x100.png") repeat-x scroll 50% top;
+    border: 2px solid #F96D1A;
+    color: #363636;
+}
+
+.ui-datepicker-prev span {
+    background-image: url(../img/datapick-bevore.png) !important;
+        background-position: 0px 0px !important;
+}
+
+.ui-datepicker-next span {
+    background-image: url(../img/datapick-next.png) !important;
+        background-position: 0px 0px !important;
+}
+
+
+
+
+
+.img-full-width {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+.caption {
+    position: relative;
+    margin-bottom: 0px;
+	    border-radius: 0px;
+-webkit-box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 15px 15px 0px rgba(0,0,0,0.75);
+}
+.caption h1 {
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+ 
+
+}
+.caption .form-background {
+    margin: 0;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+ 
+
+}
+
+.caption-2 {
+    position: relative;
+    margin-bottom: 2%;
+}
+.caption-2 h1 {
+    margin: -1px 0 0 0;
+    color: #fff;
+    padding: 10px;
+   
+    
+}
+@media (min-width:500px) { 
+	.caption-2 h1 {
+	    margin:0;
+	    position: absolute;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	  
+	}
+}
+
+.main-form-row{
+
+	 background: rgba(0, 0, 0, 0) url("../img/bett-ligt.jpg") no-repeat scroll 0 50% / cover ;
+}
+
+.welle{
+		    margin:0;
+	margin-bottom:10px;
+	    position: relative;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+    width: 100%;
+    height: 100px;
+	 background: rgba(0, 0, 0, 0) url("../img/welle.png") no-repeat scroll 0 10% / cover ;
+}
+.cont-welle{
+	
+	padding-right:0px;
+	padding-left:0px;
+	margin-top:-50px;
+}
+
+
+
+
+.main-image-cont{
+	padding:0px;
+	margin:0px;
+	
+}
+.main-image-cont h1{
+		font-size:24px;
+	padding-left:20px;
+	padding-top:20px;
+
+}
+
+/* responsive text queries */
+@media (min-width: 768px) {
+	.main-image-cont h1{
+		font-size:36px;
+	}
+
+}
+
+
+
+@media (min-width: 992px)  {
+	.main-image-cont h1{
+		font-size:40px;
+	}
+	.main-form-row{
+		  background:none;
+	}
+}
+
+
+
+@media (min-width: 1200px){
+	.main-image-cont h1{
+		font-size:45px;
+	}
+}
+
+
+.main-form-search h2{
+	  	color:#FFF;
+	margin:0px;
+	padding:0px;
+	font-size:30px;
+}
+.main-form-search h3{
+	color:#FFF;
+	margin:0px;
+	padding:0px;
+	padding-bottom:10px;
+	font-size:22px;
+}
+
+.main-form-search label{
+	font-weight:normal;
+	color:#777;
+	font-size:25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+        <?php echo $this->headTitle('Fewo s  '. $this->translate('Bäder Tourist'))->setSeparator(' - ')->setAutoEscape(false)?>
+
+        <!-- MetaStyles für optimierte Anzeige -->
+        <?php
+								
+echo $this->headMeta()
+									->appendName('viewport', 'width=device-width, initial-scale=1.0')
+									->appendHttpEquiv('X-UA-Compatible', 'IE=edge')?>
+
+        <!-- Le styles -->
+        <?php
+								
+echo $this->headLink(array(
+									'rel' => 'shortcut icon',
+									'type' => 'image/vnd.microsoft.icon',
+									'href' => $this->basePath() . '/img/favicon3.ico'
+								))
+									->prependStylesheet($this->basePath() . '/css/style.css')
+									->
+								// ->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
+								prependStylesheet($this->basePath() . '/css/bootstrap.min.css')
+									->prependStylesheet($this->basePath() . '/css/jquery-ui.min.css')?>
+
+        <!-- Scripts -->
+        <?php
+								
+echo $this->headScript()
+									->prependFile($this->basePath() . '/js/main.js')
+									->prependFile($this->basePath() . '/js/bootstrap.min.js')
+									->prependFile($this->basePath() . '/js/jquery-ui.min.js')
+									->prependFile($this->basePath() . '/js/jquery.min.js')
+ ->prependFile($this->basePath() . '/js/respond.min.js', 'text/javascript', array('conditional' => 'lt IE 9',))
+ ->prependFile($this->basePath() . '/js/html5shiv.js',   'text/javascript', array('conditional' => 'lt IE 9',));
+
+								
+								?>
+
+        <script>
+
+
+        </script>
+
+</head>
+<body>
+
+
+
+	<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container custom-nav-cont">
+			<div class="navbar-header">
+				<div class="navbar-toggle collapsed" aria-controls="navbar"
+					aria-expanded="false" data-target="#navbar" data-toggle="collapse"
+					type="button">
+					<span class="sr-only">Navigation ein-/ausblenden</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</div>
+				<!-- 				<a class="navbar-brand bt-logo" href="#"><span>Bäder Tourist</span></a> -->
+				<div class="navbar-brand bt-logo3">
+					<h4 class="hidden-xs">Bäder Tourist</h4>
+					<h5 class="hidden-xs">Fewos' auf Usedom</h5>
+				</div>
+			</div>
+
+
+
+			<div id="navbar" class=" collapse navbar-collapse">
+				<form role="search" class="navbar-form navbar-left">
+					<div class="input-group">
+						<input type="text" placeholder="Objekt Nummer"
+							class="form-control"> <span class="input-group-btn">
+							<button class="btn btn-default " type="submit">
+								<i class="glyphicon glyphicon-search"></i>
+							</button>
+						</span>
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav navbar-right">
+
+					<li><a href="#">Merkliste <span class="badge">42</span></a></li>
+					<li><a href="#">Fragen <span
+							class="glyphicon glyphicon-question-sign"></span></a></li>
+				</ul>
+
+
+
+
+			</div>
+
+		</div>
+	</nav>
+
+
+
+
+
+	<div class="container">
+
+		<div class="row main-form-row" style="background-color: #A2B9E0">
+			<div class="col-md-4 main-form-search " style="padding-top: 2%">
+
+				<form role="appartment-search">
+					<h2 class="visible-xs-block visible-sm-block">Bäder Tourist</h2>
+					<h3 class="visible-xs-block visible-sm-block">Ihr Vermittler auf
+						Usedom</h3>
+					<div class="row hidden-xs hidden-sm">
+						<label class="form-group col-xs-12" for="city">Wohin soll es
+							gehen?</label>
+					</div>
+					<div class="row">
+						<div class="form-group col-xs-12 ">
+							<input type="text" class="form-control" id="city"
+								placeholder="Ort auf Usedom">
+						</div>
+					</div>
+					<div class="row hidden-xs hidden-sm"">
+						<label class="form-group col-xs-12" for="dp-from">Wann wollen sie
+							Reisen?</label>
+					</div>
+					<div class="row">
+						<div class="form-group col-xs-6 ">
+							<input type="text" class="form-control" id="dp-from"
+								placeholder="Anreise" />
+						</div>
+						<div class="form-group col-xs-6 ">
+							<input type="text" class="form-control" id="dp-to"
+								placeholder="Abreise" />
+						</div>
+					</div>
+					<div class="row hidden-xs hidden-sm"">
+						<label class=" col-xs-12" for="person">Mit wieviel Peson?</label>
+					</div>
+
+					<div class="row" style="margin-bottom: 20px">
+						<div class="form-group col-xs-12 col-sm-6 ">
+							<select class="form-control" id="person">
+								<option>1 Person</option>
+								<option>2 Person</option>
+								<option>3 Person</option>
+								<option>4 Person</option>
+								<option>5 Person</option>
+								<option>6 Person</option>
+								<option>7 Person</option>
+								<option>8 Person</option>
+								<option>9 Person</option>
+								<option>10 Person</option>
+								<option>11 Person</option>
+								<option>12+ Person</option>
+							</select>
+						</div>
+						<div class="form-group col-sm-6 ">
+
+							<button type="submit" class="btn btn-default"
+								style="width: 100%;">Abschicken</button>
+						</div>
+					</div>
+					<div class="hidden-xs row" style="padding-bottom: 20px">
+						<div class=" col-sm-6 ">
+							<a>Deteilsuche</a>
+						</div>
+						<div class="form-group col-xs-6 "></div>
+					</div>
+				</form>
+
+			</div>
+			<div class="hidden-xs hidden-sm col-md-8 main-image-cont">
+				<div class="caption">
+					<img src="img/bett.jpg" class="img-full-width alt=" " />
+					<h1>Ein Bett auf Usedom</h1>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- <div  class="container  cont-welle"> -->
+	<!-- <div class="row welle"> -->
+	<!-- <div class="col-md-12"></div> -->
+	<!-- </div> -->
+	<!-- 					<img src="img/bett.jpg"	class="img-full-width alt=" " /> -->
+	<!-- </div> -->
+	<div style="background-color: #FFFFFF;margin-top:2%;">
+		<div class="container main-fial">
+			<h1 style="color: #777;">Unsere Büros auf Usedom</h1>
+			<h6>Als vorort Betreuer und vermittler wir vorrangig im privaten Bereich Ferienwohnungen, Ferienzimmer, Ferienhäuser und Appartements auf der gesamten Insel Usedom und auf dem umliegenden Festland. Als unser Hauptgebiet ist der Nord- bis Mittelteil der Insel Usedom zu bezeichnen.</h6>
+			<div class="row main-fial" style="padding-top: 2%">
+				<div class="col-sm-4  ">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title"><?php echo $this->translate('Zinnowitz') ?></h3>
+						</div>
+						<div class="panel-body">
+							<p><?php echo sprintf($this->translate('The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2.'), '<a href="https://github.com/zendframework/modules.zendframework.com">', '</a>') ?></p>
+							<p>
+								<a class="btn btn-success pull-right"
+									href="http://modules.zendframework.com/" target="_blank"><?php echo $this->translate('Explore ZF2 Modules') ?> &raquo;</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4  ">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title"><?php echo $this->translate('Koserow') ?></h3>
+						</div>
+						<div class="panel-body">
+							<p><?php echo sprintf($this->translate('The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2.'), '<a href="https://github.com/zendframework/modules.zendframework.com">', '</a>') ?></p>
+							<p>
+								<a class="btn btn-success pull-right"
+									href="http://modules.zendframework.com/" target="_blank"><?php echo $this->translate('Explore ZF2 Modules') ?> &raquo;</a>
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-4 ">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h3 class="panel-title"><?php echo $this->translate('Karlshagen') ?></h3>
+						</div>
+						<div class="panel-body">
+							<p><?php echo sprintf($this->translate('The community is working on developing a community site to serve as a repository and gallery for ZF2 modules. The project is available %son GitHub%s. The site is currently live and currently contains a list of some of the modules already available for ZF2.'), '<a href="https://github.com/zendframework/modules.zendframework.com">', '</a>') ?></p>
+							<p>
+								<a class="btn btn-success pull-right"
+									href="http://modules.zendframework.com/" target="_blank"><?php echo $this->translate('Explore ZF2 Modules') ?> &raquo;</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<p class="navbar-text navbar-right">Angemeldet als <a href="#" class="navbar-link">Mark Otto</a></p>
+
+	<div class="container">
+
+	
+            <?php echo $this->content; ?>
+      
+            
+            <hr>
+		<footer>
+			<p>&copy; 2005 - <?php echo date('Y') ?> by Zend Technologies Ltd. <?php echo $this->translate('All rights reserved.') ?></p>
+		</footer>
+	</div>
+	<!-- /container -->
+        <?php echo $this->inlineScript()?>
+    </body>
+</html>
